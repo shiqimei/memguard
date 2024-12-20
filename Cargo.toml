@@ -1,0 +1,13 @@
+[package]
+name = "memguard"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sysinfo = "0.29"
+clap = { version = "4.4", features = ["derive"] }
+byte-unit = "4.0"
+log = "0.4"
+env_logger = "0.10"
+libc = "0.2"
+users = "0.11"

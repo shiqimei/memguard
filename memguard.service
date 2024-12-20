@@ -1,0 +1,11 @@
+[Unit]
+Description=Memory Guard Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/sudo /usr/local/bin/memguard --max-memory=16GB
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
